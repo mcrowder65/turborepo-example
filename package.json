@@ -6,10 +6,15 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/rs",
+    "apps/rstwo"
   ],
   "scripts": {
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "setup": "yarn clean && yarn",
+    "clean": "yarn --cwd apps/rs clean && yarn --cwd apps/rstwo clean",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
   },
   "turbo": {
     "baseBranch": "origin/main",

@@ -1,5 +1,5 @@
 {
-  "name": "rs",
+  "name": "rstwo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,10 +12,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=5555 react-scripts start",
     "dev": "yarn start",
     "build": "react-scripts build",
     "test": "CI=true react-scripts test",
+    "lint": "",
     "eject": "react-scripts eject",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf build"
   },
