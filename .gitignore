@@ -1,0 +1,4 @@
+.idea
+node_modules
+apps/rs/node_modules
+.turbo

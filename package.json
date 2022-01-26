@@ -1,0 +1,36 @@
+{
+  "name": "turborepo-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matt Crowder <mcrowder65@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build"
+  },
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "build": {
+        "dependsOn": ["^build"],
+        "outputs": ["build/**"]
+      },
+      "test": {
+        "dependsOn": ["^build"],
+        "outputs": []
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  },
+  "devDependencies": {
+    "turbo": "^1.0.28"
+  }
+}
