@@ -1,5 +1,5 @@
 {
-  "name": "shared",
+  "name": "shared-two",
   "version": "1.0.0",
   "main": "lib",
   "files": [
@@ -15,5 +15,7 @@
     "dev": "babel --watch src --out-dir lib"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+
+  }
 }
