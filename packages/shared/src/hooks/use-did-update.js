@@ -1,6 +1,6 @@
 import React from "react"
-import usePrevious from "./use-previous"
-import useCallbackRef from "./use-callback-ref"
+import usePrevious from "src/hooks/use-previous"
+import useCallbackRef from "src/hooks/use-callback-ref"
 
 const useDidUpdate = (value, onUpdate) => {
   const prev = usePrevious(value)
