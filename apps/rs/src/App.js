@@ -1,29 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import Page from "./page"
-import Hello from "./hello"
-
+import React from "react"
+import "./App.css"
+import Button from "shared/lib/components/button"
+import useDidUpdate from "shared/lib/hooks/use-did-update"
 function App() {
+  const [count, setCount] = React.useState(0)
+  useDidUpdate(count, (prevCount) => console.log({ count, prevCount }))
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload!!!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Page/>
-      <Hello/>
+      <Button onClick={() => setCount(count + 1)}>Click me?</Button>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
