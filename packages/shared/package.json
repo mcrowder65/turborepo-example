@@ -5,6 +5,7 @@
   "files": [
     "lib/**/*"
   ],
+  "module": "lib",
   "author": "Matt Crowder",
   "private": true,
   "license": "MIT",

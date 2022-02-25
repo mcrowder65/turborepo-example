@@ -12,6 +12,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:one": "turbo run build --ignore='!packages/shared'",
+    "dev:two": "",
     "setup": "yarn clean && yarn",
     "clean": "rm -rf node_modules && yarn --cwd apps/rs clean && yarn --cwd apps/rstwo clean && yarn --cwd packages/shared clean",
     "lint": "turbo run lint",
