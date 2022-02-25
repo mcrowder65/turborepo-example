@@ -2,14 +2,12 @@ module.exports = {
   presets: ["@babel/preset-env", "@babel/preset-react"],
   plugins: [
     [
-      "import-path-replace",
+      "module-resolver",
       {
-        rules: [
-          {
-            match: "src",
-            replacement: "lib",
-          },
-        ],
+        alias: {
+          "src/hooks": "./lib/hooks",
+          "src/components": "./lib/components",
+        },
       },
     ],
   ],
