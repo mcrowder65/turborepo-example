@@ -1,6 +1,6 @@
 import React from "react"
 import "./App.css"
-import Button from "shared/lib/components/button"
+import Button from "shared/src/components/button"
 console.log("helo")
 function App() {
   return (

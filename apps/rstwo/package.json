@@ -6,12 +6,11 @@
     "shared": "*"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "dev": "yarn start",
-    "build": "react-scripts build",
+    "build": "react-app-rewired build",
     "test": "CI=true react-scripts test",
     "lint": "",
-    "eject": "react-scripts eject",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf build"
   },
   "eslintConfig": {
