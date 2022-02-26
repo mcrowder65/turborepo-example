@@ -14,8 +14,8 @@
     "build": "babel src --out-dir lib",
     "dev": "babel --watch src --out-dir lib"
   },
-  "dependencies": {},
-  "devDependencies": {
-
-  }
+  "dependencies": {
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {}
 }

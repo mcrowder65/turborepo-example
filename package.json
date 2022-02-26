@@ -33,7 +33,10 @@
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
-    "babel-plugin-module-resolver": "^4.1.0"
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-jest": "^27.5.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1"
   },
   "packageManager": "yarn@1.22.17"
 }
