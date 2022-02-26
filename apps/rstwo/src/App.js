@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.css"
 import Button from "shared/lib/components/button"
-
+console.log("helo")
 function App() {
   return (
     <div className="App">

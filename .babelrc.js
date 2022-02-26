@@ -9,17 +9,26 @@ module.exports = {
       return {
         visitor: {
           ImportDeclaration(path) {
-            if (this.filename.includes("shared")) {
+            if (this.filename.includes("shared/")) {
               const value = path.node.source.value
 
-              if (value.includes("src/components")) {
+              if (value.includes("src/")) {
                 path.node.source.value = `shared/${value}`
+                return
               }
             }
-            if (this.filename.includes("rs")) {
+            if (this.filename.includes("/apps/rs/")) {
               const value = path.node.source.value
               if (value.includes("src/")) {
                 path.node.source.value = `rs/${value}`
+                return
+              }
+            }
+            if (this.filename.includes("/apps/rstwo/")) {
+              const value = path.node.source.value
+              if (value.includes("src/")) {
+                path.node.source.value = `rstwo/${value}`
+                return
               }
             }
           },
