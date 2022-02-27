@@ -1,13 +1,16 @@
 module.exports = {
   presets: ["@babel/preset-env", "@babel/preset-react"],
-  plugins: [
-    [
-      "module-resolver",
-      {
-        alias: {
-          "src/functions": "./lib/functions",
-        },
-      },
-    ],
-  ],
+  plugins:
+    process.env.NODE_ENV !== "test"
+      ? [
+          [
+            "module-resolver",
+            {
+              alias: {
+                "src/functions": "./lib/functions",
+              },
+            },
+          ],
+        ]
+      : [],
 }
