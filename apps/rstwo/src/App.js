@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       I am the rs two! and I have new content!
-      <Button>Click me i'm irish</Button>
+      <Button>Click me i'm irish wbu</Button>
     </div>
   )
 }

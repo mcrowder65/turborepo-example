@@ -9,7 +9,7 @@
     "start": "react-app-rewired start",
     "dev": "yarn start",
     "build": "react-app-rewired build",
-    "test": "CI=true react-scripts test",
+    "test": "jest",
     "lint": "",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf build"
   },

@@ -6,5 +6,6 @@ test("renders app two", () => {
   const linkElement = screen.getByText(
     /I am the rs two! and I have new content!/i
   )
+
   expect(linkElement).toBeInTheDocument()
 })

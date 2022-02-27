@@ -9,7 +9,7 @@
     "start": "react-app-rewired start",
     "dev": "yarn start",
     "build": "react-app-rewired build",
-    "test": "jest --config ../../jest.config.js rs/**/*.js",
+    "test": "jest",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf build"
   },
   "eslintConfig": {
