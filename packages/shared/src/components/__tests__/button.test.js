@@ -1,8 +1,7 @@
 import React from "react"
-console.log("hi")
-import Button from "src/components/button"
 import { render, screen } from "@testing-library/react"
-
+import Button from "src/components/button"
+console.log("helo")
 test("renders a button", () => {
   render(<Button>button</Button>)
 

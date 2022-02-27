@@ -1,6 +1,7 @@
 const path = require("path")
 
 module.exports = {
+  moduleDirectories: ["node_modules", "<rootDir>"],
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
       {},
@@ -12,7 +13,7 @@ module.exports = {
     //https://github.com/facebook/jest/issues/3845#issuecomment-582511237
     "\\.js$": [
       "babel-jest",
-      { configFile: path.resolve(__dirname, "../../.babelrc.js") },
+      { configFile: path.resolve(__dirname, "./.babelrc.js") },
     ],
   },
 }

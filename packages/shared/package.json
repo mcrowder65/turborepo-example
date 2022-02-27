@@ -12,7 +12,8 @@
   "scripts": {
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf build",
     "build": "babel src --out-dir lib --ignore \"src/**/*.test.js\"",
-    "dev": "yarn build --watch"
+    "dev": "yarn build --watch",
+    "test": "jest"
   },
   "dependencies": {},
   "devDependencies": {}
