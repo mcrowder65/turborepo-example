@@ -2,9 +2,7 @@
   "name": "rstwo",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "shared": "*"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "react-app-rewired start",
     "dev": "yarn start",

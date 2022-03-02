@@ -5,7 +5,7 @@ console.log("helo")
 function App() {
   return (
     <div className="App">
-      I am the rs two! and I have new content!
+      I am the rs two! and I have new content! Iasdjfladsjf!
       <Button>Click me i'm irish wbu</Button>
     </div>
   )
