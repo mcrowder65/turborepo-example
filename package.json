@@ -10,6 +10,7 @@
     "packages/*"
   ],
   "scripts": {
+    "turbo": "turbo",
     "build:one": "turbo run build --scope='rs' --scope='shared-two' --scope='shared'",
     "build:two": "turbo run build --scope='rstwo' --scope='shared-two' --scope='shared'",
     "build": "turbo run build",
@@ -40,7 +41,7 @@
     "jest": "^27.5.1",
     "react-app-rewired": "^2.2.1",
     "react-scripts": "5.0.0",
-    "turbo": "1.1.4"
+    "turbo": "1.1.6"
   },
   "packageManager": "yarn@1.22.17"
 }

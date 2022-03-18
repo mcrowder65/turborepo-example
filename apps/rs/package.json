@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {},
   "scripts": {
+    "turbo:cwd": "turbo run jest --cwd=../.. --scope='rs'",
+    "turbo:yarncwd": "yarn --cwd ../.. turbo run jest --scope='rs'",
     "start": "react-app-rewired start",
     "dev": "yarn start",
     "build": "react-app-rewired build",
+    "jest": "jest",
     "test": "jest",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf build"
   },
