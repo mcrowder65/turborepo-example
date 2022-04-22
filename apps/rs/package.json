@@ -2,7 +2,9 @@
   "name": "rs",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "shared": "*"
+  },
   "scripts": {
     "turbo:cwd": "turbo run jest --cwd=../.. --scope='rs'",
     "turbo:yarncwd": "yarn --cwd ../.. turbo run jest --scope='rs'",
